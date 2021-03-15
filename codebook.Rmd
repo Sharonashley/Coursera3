@@ -1,0 +1,38 @@
+---
+title: "Codebook"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Getting and Cleaning Data - Course Project
+
+## Changes to the data
+
+The following tasks were done on the original data set to create the clean data set:
+* merged into one data set by combining training and test tests
+* shortened to only include the measurements of the mean and standard deviation of each measurement
+* renamed each activity in the data set using descriptive names
+* dataset was relabelled with descriptive variable names
+* took the average of each variable for each activity and each subject - the values created the independent tiny dataset
+
+## Data Descriptions
+###Identififiers
+The second last column identifies the activity by name
+The last column identifies the ID of the subject 
+
+
+###Measurements
+As mentioned above,the variables remaining are just the calculated means and standard deviations of all measurements in the data set: 
+
+```{r}
+colnames(all_data)
+```
+
+## Tiny dataset
+
+The tiny dataset contains the same variable names shown. 
+
+
